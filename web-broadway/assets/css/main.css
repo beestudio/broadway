@@ -407,8 +407,34 @@ i {
 }
 
 
-/*слайдеер отзывы===
+/*слайдеер, отзывы===
 ===============================*/
+.bg-title-rev-1 {
+	width: 50px;
+    display: block;
+    margin: 0 auto;
+    border: #93a12d 2px solid;
+    height: 60px;
+    border-bottom: none;
+}
+.bg-title-rev-2 {
+	width: 50px;
+    display: block;
+    margin: 0 auto;
+    border: #93a12d 2px solid;
+    height: 30px;
+    padding-top: 30px;
+    margin-top: 35px;
+    border-top: none;
+}
+.rev-title {
+	padding-top: 50px;
+}
+.rev-title h2 {
+	background: none;
+	color: #fff;
+	padding-top: 50px;
+}
 .reviews {
 	background: url(../img/bg/bg-review.jpg) no-repeat;
 	background-size: cover;
