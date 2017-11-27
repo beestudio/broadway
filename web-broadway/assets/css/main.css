@@ -26,7 +26,7 @@ i {
 }
 .logo p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: lighter;
 	color: #fff; 
 }
@@ -44,13 +44,14 @@ i {
 	padding-bottom: 10px;
 }
 .adress p, .grafik p {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: lighter;
 	line-height: 21px;
 }
 .phone p {
 	font-weight: lighter;
 	line-height: 21px;
+	font-size: 12px;
 }
 
 /*--Меню
@@ -182,18 +183,18 @@ i {
 
 
 .slider__caption {
-  font-size: 38px;
+  font-size: 36px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
-  padding-left: 380px;
+  padding-left: 360px;
 }
 .slider__txt {
  	font-size: 18px;
- 	padding-left: 380px;
+ 	padding-left: 360px;
    
 }
 .slider__btn {
-	padding-left: 380px;
+	padding-left: 360px;
 }
 .slider__btn a {
 	text-decoration: none;
@@ -252,11 +253,11 @@ i {
 ========================--*/
 .second p {
 	color: #333;
-	font-size: 14px;
+	font-size: 12px;
 	margin-bottom: 0px;
 }
 .second li {
-	width: 8.33333%;
+	width: 8.3333%;
 }
 .cat-eb a {
 	text-align: center;
@@ -267,8 +268,11 @@ i {
 	text-align: center;
 	background: #e1e1e1;
 }
+.category-img {
+	width: 100%;
+}
 .category-img img {
-	width: 100px;
+	width: 100%;
 	height: 80px;
 
 }
@@ -289,6 +293,7 @@ i {
 	background: url(../img/bg/bg-category.jpg);
 	border-top: #93a12d 15px solid;
 	border-bottom: #93a12d 15px solid;
+	background-size: cover;
 }
 .category-container {
 	margin-bottom: 20px;
@@ -302,13 +307,16 @@ i {
 .descripion-img {
 	width: 160px;
 	height: 130px;
-	background: #fff;
+	background: #ebebeb;
 	border-radius: 5px;
+	border: #93a12d 2px solid;
 }
 .descripion-img img {
 	display: block;
 	margin: 0 auto;
 	padding: 10px;
+	width: 130px;
+	height: 120px;
 }
 .sushi-description {
 	margin-left: 15px;
@@ -328,8 +336,12 @@ i {
 	font-weight: normal;
 }
 
-/*Слайдер новинки====
+/*Слайдер, новинки====
 ===========================*/
+.novinki {
+	background: #ebebeb;
+    padding-top: 10px;
+}
 .novinki-title {
 	position: relative;
 	margin-top: 20px;
@@ -343,7 +355,7 @@ i {
     border: #93a12d 2px solid
 }
 .novinki-title h2 {
-	background: #fff;
+	background: #ebebeb;
     text-align: center;
     position: absolute;
     text-transform: uppercase;
@@ -354,11 +366,15 @@ i {
 	font-size: 16px;
 	text-decoration: underline;
 	text-align: center;
+	margin-top: 10px;
 }
 .novinki-description p {
 	font-size: 12px;
 	text-align: center;
 	padding-bottom: 15px;
+	max-width: 200px;
+    display: block;
+    margin: 0 auto;
 }
 .novinki-description span {
 	font-size: 16px;
@@ -368,7 +384,10 @@ i {
 .swiper-slide img {
 	display: block;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 5px;
+    border: #93a12d 2px solid;
+    border-radius: 5px;
+    background: #fff;
 }
 .swiper-wrapper {
 	margin-top: 50px !important;
@@ -391,7 +410,11 @@ i {
 	border-top: #93a12d 15px solid;
 	border-bottom: #93a12d 15px solid;
 }
-
+.trigers {
+	background: #ebebeb;
+	padding-top: 10px;
+    padding-bottom: 20px;
+}
 .triger-rows {
 	margin-bottom: 30px;
 }
@@ -439,6 +462,7 @@ i {
 	background: url(../img/bg/bg-review.jpg) no-repeat;
 	background-size: cover;
 	height: 600px;
+	padding-top: 10px;
 }
 .autor-name, .date, .review p {
 	color: #fff;
@@ -464,23 +488,19 @@ i {
 ---------------------*/
 .footer {
 	background: #000;
-	height: 70px;
 }
-.footer p {
-	color: #fff;
-	font-size: 13px;
+.social {
+	padding: 10px;
+	text-align: right;
 }
-.footer i {
-	font-size: 35px;
+.social i {
+	font-size: 30px;
 }
-.footer a {
-	text-decoration: none;
-}
+
 .footer-left p {
-	padding-top: 25px;
-	text-align: left;
+	padding-top: 15px;
+	color: #fff;
 }
-.footer-right {
-
-
+.social a {
+	text-decoration: none;
 }
