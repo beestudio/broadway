@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
     
 
 
@@ -34,13 +35,11 @@
                   </div>
                   <div class="col-md-3 phone">
                     <i class="icon-old-typical-phone"></i>
-                    <p>093-042-65-42 
-                      <br>099-135-99-96 
-                      <br>067-759-35-15</p>
+                    <a href="tel:0930426542, 0991359996, 0677593515" title="Нажмите что бы позвонить нам"><p>093-042-65-42<br>099-135-99-96<br>067-759-35-15</p></a>
                   </div>
                   <div class="col-md-3 adress">
                     <i class="icon-pin"></i>
-                    <p>г. Шостка, ул. Ленина 9 <br>Кафе "Broadway"</p>
+                    <a href="https://goo.gl/maps/LLvGrsjxqsn" title="Посмотреть на карте" target="_blank"><p>г. Шостка, ул. Ленина 9 <br>Кафе "Broadway"</p></a>
                   </div>
                   <div class="col-md-3 grafik">
                     <i class="icon-clock-circular-outline"></i>
@@ -133,7 +132,7 @@
                   <div class="category-img">
                     <img src="assets/img/category/maki-roli.png" width="118" height="95" alt="Маки Роллы">
                   </div>
-                  <div class="category-title">
+                  <div class="category-title ">
                     <p>Маки Роллы</p>
                   </div>
                 </div>
@@ -145,7 +144,7 @@
                   <div class="category-img">
                     <img src="assets/img/category/sushi.png" width="120" height="69" alt="Суши">
                   </div>
-                  <div class="category-title">
+                  <div class="category-title ">
                     <p>Суши</p>
                   </div>
                 </div>
@@ -473,8 +472,8 @@
           </div>
 
         <div class="novinki">
-            <div class="container">
-              <div class="novinki-title">
+            <div class="container animatedParent">
+              <div class="novinki-title animated growIn slower">
                 <div class="bg-title"></div>
                 <h2>Новинки меню</h2>
               </div>
@@ -571,8 +570,8 @@
 
         <div>
           <div class="trigers">
-            <div class="container">
-              <div class="novinki-title">
+            <div class="container animatedParent">
+              <div class="novinki-title animated growIn slower">
                 <div class="bg-title"></div>
                 <h2>Только лучшее качество и сервис</h2>
               </div>
@@ -614,8 +613,8 @@
 
         <div>
           <div class="reviews">
-            <div class="container">
-              <div class="novinki-title rev-title">
+            <div class="container animatedParent">
+              <div class="novinki-title rev-title animated growIn slower">
                 <div class="bg-title-rev-1"></div>
                 <h2>Отзывы</h2>
                 <div class="bg-title-rev-2"></div>
@@ -700,6 +699,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/css3-animate-it.js"></script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper('.swiper-container', {

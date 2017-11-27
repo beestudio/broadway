@@ -53,6 +53,22 @@ i {
 	line-height: 21px;
 	font-size: 12px;
 }
+.phone a {
+	text-decoration: none;
+	color: #fff;
+}
+.phone a:hover {
+	color: #93a12d;
+	transition: 0.5s;
+}
+.adress a {
+	text-decoration: none;
+	color: #fff;
+}
+.adress a:hover {
+	color: #93a12d;
+	transition: 0.5s;
+}
 
 /*--Меню
 ========================--*/
@@ -117,9 +133,9 @@ i {
   margin: 2rem 12px;
   border-radius: 50%;
   z-index: 10;
-  outline: 6px solid #93a12d;
+  outline: 6px solid #333;
   outline-offset: -6px;
-  box-shadow: 0 0 0 0 #93a12d, 0 0 0 0 rgba(147, 161, 45, 1);
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 1);
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -228,23 +244,23 @@ i {
 
 @-webkit-keyframes check {
   50% {
-    outline-color: #333;
-    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    outline-color: #93a12d;
+    box-shadow: 0 0 0 12px #93a12d, 0 0 0 36px rgba(147, 161, 45, 0.2);
   }
   100% {
-    outline-color: #333;
-    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    outline-color: #93a12d;
+    box-shadow: 0 0 0 0 #93a12d, 0 0 0 0 rgba(147, 161, 45, 0);
   }
 }
 
 @keyframes check {
   50% {
-    outline-color: #333;
-    box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    outline-color: #93a12d;
+    box-shadow: 0 0 0 12px #93a12d, 0 0 0 36px rgba(147, 161, 45, 0.2);
   }
   100% {
-    outline-color: #333;
-    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    outline-color: #93a12d;
+    box-shadow: 0 0 0 0 #93a12d, 0 0 0 0 rgba(147, 161, 45, 0);
   }
 }
 
@@ -255,6 +271,7 @@ i {
 	color: #333;
 	font-size: 12px;
 	margin-bottom: 0px;
+	line-height: 1.2;
 }
 .second li {
 	width: 8.3333%;
@@ -271,6 +288,7 @@ i {
 .category-img {
 	width: 100%;
 }
+
 .category-img img {
 	width: 100%;
 	height: 80px;
@@ -281,6 +299,12 @@ i {
 }
 .nav-link.active {
 	border-color: #93a12d !important;
+	
+}
+.active .category-title, .active .category-title p {
+	background: #93a12d;
+	color: #fff;
+	transition: 0.6s;
 }
 .category-title {
 	background: #b7b7b7;
@@ -288,6 +312,9 @@ i {
 	padding-bottom: 5px;
 	margin-top: 10px;
 	height: 50px;
+}
+.dop-title {
+	
 }
 .tab-content {
 	background: url(../img/bg/bg-category.jpg);
@@ -323,7 +350,6 @@ i {
 }
 .sushi-description h4 {
 	font-size: 16px;
-	text-decoration: underline;
 	color: #fff;
 }
 .sushi-description p {
@@ -345,7 +371,7 @@ i {
 .novinki-title {
 	position: relative;
 	margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .bg-title {
 	width: 50px;
@@ -360,11 +386,10 @@ i {
     position: absolute;
     text-transform: uppercase;
     width: 100%;
-    top: 60px;
+    top: 50px;
 }
 .novinki-description h4 {
 	font-size: 16px;
-	text-decoration: underline;
 	text-align: center;
 	margin-top: 10px;
 }
@@ -390,8 +415,7 @@ i {
     background: #fff;
 }
 .swiper-wrapper {
-	margin-top: 50px !important;
-	margin-bottom: 50px !important;
+	
 }
 .swiper-button-next {
 	background-image: url(../img/main/next-arrow.png) !important;
@@ -437,7 +461,7 @@ i {
     display: block;
     margin: 0 auto;
     border: #93a12d 2px solid;
-    height: 60px;
+    height: 50px;
     border-bottom: none;
 }
 .bg-title-rev-2 {
@@ -451,38 +475,40 @@ i {
     border-top: none;
 }
 .rev-title {
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 .rev-title h2 {
 	background: none;
 	color: #fff;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 .reviews {
 	background: url(../img/bg/bg-review.jpg) no-repeat;
 	background-size: cover;
 	height: 600px;
 	padding-top: 10px;
+	background-position: center;
 }
 .autor-name, .date, .review p {
 	color: #fff;
 	text-align: center;
 }
 .autor-name {
-	font-size: 18px;
-	padding-top: 30px;
+	font-size: 16px;
+	
 }
 .date, .review p {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: lighter;
 }
 .review p {
-	
+	max-width: 300px;
 }
 .review-block {
 	padding: 10px;
 	background: rgba(0, 0, 0, 0.5);
 	height: 180px;
+	border-radius: 5px;
 }
 /*--footer---
 ---------------------*/
