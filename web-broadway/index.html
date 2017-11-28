@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -31,7 +32,7 @@
                 <div class="row header-row">
                   <div class="col-md-3 logo">
                     Sushi<i class="icon-sushi-and-chopsticks"></i>Broadway
-                    <p>Доставка суши и роллов в вашем городе</p>
+                    <p>Доставка суши и роллов в Шостке</p>
                   </div>
                   <div class="col-md-3 phone">
                     <i class="icon-old-typical-phone"></i>
@@ -39,7 +40,7 @@
                   </div>
                   <div class="col-md-3 adress">
                     <i class="icon-pin"></i>
-                    <a href="https://goo.gl/maps/LLvGrsjxqsn" title="Посмотреть на карте" target="_blank"><p>г. Шостка, ул. Ленина 9 <br>Кафе "Broadway"</p></a>
+                    <p>г. Шостка, ул. Ленина 9 <br>Кафе "Broadway"</p>
                   </div>
                   <div class="col-md-3 grafik">
                     <i class="icon-clock-circular-outline"></i>
@@ -53,7 +54,8 @@
               <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+                    Меню
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -702,19 +704,39 @@
     <script src="assets/js/css3-animate-it.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        freeMode: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      });
-    </script>
+         var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+      }); 
+
+      if(screen.width <='960') {
+        var table = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 5,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+      }); 
+      
+      }
+   </script>
+      
+      
+     
   </body>
 </html>

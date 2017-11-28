@@ -530,3 +530,46 @@ i {
 .social a {
 	text-decoration: none;
 }
+/*.navbar-light .navbar-toggler-icon {
+	background-image: url(../img/main/button-menu.png) !important;
+	font-size: 35px;
+    
+}*/
+/*-TABLET-*/
+@media screen and (max-width: 960px) {
+	.category-description {
+		display: block;
+	}
+	.descripion-img {
+		margin: 0 auto;
+	}
+	.sushi-description {
+		text-align: center;
+		margin-left: 0px;
+	}
+	.navbar-toggler {
+		color: #fff !important;
+		/*margin: 0 auto;*/
+		text-transform: uppercase;
+		border-color: #93a12d !important;
+		padding: 10px;
+	}
+	.navbar-toggler:focus {
+		outline: none !important;
+	}
+	.navbar-collapse {
+		flex-basis: auto !important;
+
+	}
+	.navbar-nav {
+		flex-direction: row;
+	}
+	
+}
+
+
+
+/*-MOBILE-*/
+@media screen and (max-width: 768px) {
+	
+}
